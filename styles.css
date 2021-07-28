@@ -1,18 +1,175 @@
-#header {
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    
+}
+
+
+.body {
+    margin: 0;
+}
+
+.nav {
     display: flex;
-    margin: auto;
+    border: 1px rgb(64, 221, 32) solid;
+    margin: 10px;
     width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    
+}
+.nav div{
+    border: 1px rgb(29, 24, 24) solid;
+    display: flex;
+    margin-right: 15px;
 }
 
+.menu-btn {
+    width: 35px;
+    height: 35px;
+  
+   }
 
-#hamburger-menu {
-    background-color: rgb(34, 216, 230);
-    height: 50px;
-    width: 50px;
+.logo {
+    height: 35px;
+    width: 120px;
+    padding: 2px;
+    margin-left: 1.5rem;
+    justify-content: center;
+}   
+
+.search-bar {
+    display: flex;
+   flex: 2;
+   
+   background-color: aqua;
+   margin: 0 10rem 0 10rem;
+   }
+   .search-input {
+       width: 100%;
+       padding-left: 0.4em;
+       font-weight: bold; 
+       font-size: 1.1em;
+
+   }
+
+   .search-icon {
+       background-color: rgb(175, 209, 24);
+       align-items: center;
+       min-width: 90px;
+       
+   }
+
+  
+
+.channel-logo {
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 2rem;
 }
 
-#youtube-icon {
-    background-color: rgb(34, 216, 230);
-    height: 50px;
-    width: 50px;
+.upload-btn {
+    margin-right: 2rem;
+    padding: 5px;
+}
+
+.apps-icon {
+    margin-right: 2rem;
+    padding: 5px;
+}
+
+.video-container {
+    background-color: red;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+
+
+}
+
+.video-embed {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+} 
+
+.content {
+   display: grid;
+   grid-template-columns: 70% 30%;
+   grid-template-areas: 
+        "content sidebar"
+        "content sidebar"
+        "content sidebar"
+        "content sidebar"
+        "content sidebar"
+    
+
+}
+
+.video-info {
+    background-color: rgb(33, 170, 224);
+    border: blue;
+}
+
+.channel-info {
+    background-color: burlywood;
+    border: darkblue;
+}
+
+.video-description {
+    background-color: darkkhaki;
+    border: 2px rgb(24, 29, 15);
+    
+}
+
+.comment-section {
+    background-color: darksalmon;
+    border: 1px rgb(29, 24, 24);
+}
+
+.sidebar {
+    background-color: rgb(229, 59, 235);
+    border: 2px rgb(29, 24, 24);
+    grid-area: sidebar;
+    
+}
+
+.video-container {
+   
+    
+    
+}
+
+.small-video-container {
+    
+    display: flex;
+    flex-direction: row;
+    max-width: 500px;
+}
+.video-details {
+    padding: 10px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    max-height: 150px;
+    
+}
+
+.video-title {
+    margin-bottom: 10px;
+}
+
+.channel-name {
+   margin-bottom: 5px;
+}
+
+.thumbnail {
+    position: relative;
+    display: flex;
 }
